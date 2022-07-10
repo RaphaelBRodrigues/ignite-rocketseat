@@ -1,13 +1,13 @@
 {
-  "name": "desafio",
+  "name": "c03",
   "version": "1.0.0",
+  "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js",
-    "test": "jest --watchAll --maxWorkers=1"
+    "dev": "nodemon",
+    "test": "jest --watch"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.1",
     "uuid": "^8.3.2"
   },
