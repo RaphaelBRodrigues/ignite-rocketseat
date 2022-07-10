@@ -1,4 +1,6 @@
-function findByUsername(username, users) {
+const users = require("../data/users");
+
+function findByUsername(username) {
   const selectedUser = users.find((user) => {
     return user.username.toLowerCase() === username.toLowerCase()
   });

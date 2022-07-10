@@ -1,19 +1,19 @@
 {
-  "name": "rocket",
+  "name": "desafio",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest --watchAll --maxWorkers=1"
+  },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.1",
+    "express": "^4.17.1",
     "uuid": "^8.3.2"
   },
-  "scripts": {
-    "start": "node ./src/index.js",
-    "start:watch": "nodemon ./src/index.js"
-  },
   "devDependencies": {
-    "eslint": "^8.19.0",
-    "prettier": "2.7.1"
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   }
 }
